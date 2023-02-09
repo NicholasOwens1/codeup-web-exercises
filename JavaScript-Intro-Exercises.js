@@ -1,6 +1,9 @@
 // let a = 1;
+// 1
 // let b = a++;
+// 1
 // let c = ++a;
+// 2
 //
 // a = 1;
 // b = 2;
@@ -12,6 +15,7 @@
 // d++;
 // e++;
 // d = NaN
+
 // e = 1
 
 
@@ -21,7 +25,7 @@
 
 // var price = 2.7;
 // price.toFixed(2);
-// price.toFixed = 2.70;
+// price.toFixed = "2.70";
 
 // let price = "2.7";
 // price.toFixed(2);
@@ -165,6 +169,47 @@ let mermaid = costPerday * 3;
 let bear = costPerday * 5;
 let hercules = costPerday * 1;
 console.log( mermaid + bear + hercules);
+
+let googlePay = 400 * 6;
+let amazonPay = 380 * 4;
+let fbPay = 350 * 10;
+
+let total = googlePay + amazonPay + fbPay;
+console.log(total);
+
+let full = 25
+let full = false
+let freeTime = true
+let available = !false
+
+let enrolled = true & true
+
+
+let maxClassSize = 30
+let scheduleConflicts = false
+let currentClassSize = 24
+let canEnroll = currentClassSize < maxClassSize && !scheduleConflicts;
+
+
+let itemNumber
+let minimumItems = 3
+let offerexpired = false
+let vipMember = true
+let productOffer =
+
+
+var username = 'codeup';
+var password = 'notastrongpassword';
+
+let goodLength = 5
+let password.length = length
+let notLongEnough = length < goodLength = false
+
+let notOriginal = password.substring(0)
+
+
+
+
 
 
 
