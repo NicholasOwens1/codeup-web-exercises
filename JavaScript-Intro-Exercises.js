@@ -197,13 +197,13 @@
 //
 //
 
-let minCartSize = 2;
-let cartSize = 2;
-let vipMember = false;
-let offerExpired = false;
-
-let canOfferApply = (vipMember || cartSize > minCartSize) && !offerExpired;
-console.log(canOfferApply);
+// let minCartSize = 2;
+// let cartSize = 2;
+// let vipMember = false;
+// let offerExpired = false;
+//
+// let canOfferApply = (vipMember || cartSize > minCartSize) && !offerExpired;
+// console.log(canOfferApply);
 
 // let username = "codeup";
 // let password = 'notastrongpassword';
@@ -225,7 +225,7 @@ console.log(canOfferApply);
 // let hasWhiteSpace = firstCharUser === ' ' && lastCharUser === ' ' && firstCharPass === ' ' lastCharPass ===
 //
 //let hasWhitespace = firstCharUser === ' ' || lastCharUser === ' ' ||
-console.log(hasWhiteSpace);
+// console.log(hasWhiteSpace);
 //
 
 
