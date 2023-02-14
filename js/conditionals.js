@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /* ########################################################################## */
 
@@ -8,6 +8,7 @@
  * name as input. This function should return a message which relates to the
  * color stated in the argument of the function. For colors you do not have
  * responses written for, return a string stating so
+ *
  *
  * Example:
  *  > analyzeColor('blue') // returns "blue is the color of the sky"
@@ -22,23 +23,57 @@
  * console.logging the function's return value
  */
 
+
+// const analyzeColor = color => {
+//
+//     let choice = color.toString()
+//     if (choice === "blue") {
+//         return ("the sky is blue")
+//     } else if (choice === "green") {
+//         return ("grass is green")
+//     } else {
+//         return (`I do not know anything about ${choice}.`)
+//     }
+// }
+
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
+// let mystery = analyzeColor(randomColor);
+// console.log(mystery);
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+
+// const analyzeColor = color => {
+//
+//     let choice = color.toString()
+//     switch (color) {
+//         case "blue":
+//             return ("the sky is blue")
+//             break;
+//         case "green":
+//             return ("grass is green")
+//             break;
+//         default:
+//             return (`I do not know anything about ${choice}.`)
+//     }
+// }
+//
+// console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
@@ -47,6 +82,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
+// let getColor = prompt("choose a color");
+//
+//
+// const analyzeColor = color => {
+
+// let choice = color.toString()
+// switch (color) {
+//     case "blue":
+//         return ("the sky is blue")
+//         break;
+//     case "green":
+//         return ("grass is green")
+//         break;
+//     default:
+//         return (`I do not know anything about ${choice}.`)
+// }
+// }
+//
+// alert(analyzeColor(getColor));
 /* ########################################################################## */
 
 /**
@@ -69,6 +123,28 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+// const calculateTotal = (winningNumber, totalAmount) => {
+//     switch (winningNumber){
+//         case 1:
+//             return totalAmount - (.1 * totalAmount)
+//             break;
+//         case 2:
+//             return totalAmount - (.25 * totalAmount)
+//             break;
+//         case 3:
+//             return totalAmount - (.35 * totalAmount)
+//             break;
+//         case 4:
+//             return totalAmount - (.50 * totalAmount)
+//             break;
+//         case 5:
+//             return totalAmount * 0
+//             break;
+//     }
+// }
+
+// console.log(calculateTotal(2, 383));
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -79,6 +155,17 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+//
+// let getOriginalPrice = prompt("What's your total bill?");
+//
+// calculateTotal(luckyNumber, getOriginalPrice);
+//
+// alert(`Your lucky number is ${luckyNumber}!`);
+//
+// alert(`Your price before the discount was ${getOriginalPrice}.`);
+//
+// alert(`Your price after your discount is ${calculateTotal(luckyNumber, getOriginalPrice)}.`);
+
 
 /**
  * TODO:
@@ -94,7 +181,34 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * if the user enters a value that is not of the number data type.
  * Instead, use an alert to inform them of the incorrect input data type.
  *
- *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+// let numQuestion = confirm(`Would you like to enter a number?`);
+// if (numQuestion === true) {
+//     let enteredNumber = parseInt(prompt("enter a number"));
+
+    // if (isNan(enteredNumber === true)) {
+    //     alert("that is not a number");
+    // }
+    //
+    //
+    // if (enteredNumber % 2 === 0) {
+    //     alert(`${enteredNumber} is an even number`);
+    // }
+    // else {
+    //     alert(`${enteredNumber} is an odd number`)
+    // }
+    // let combined = parseInt(100) + enteredNumber;
+    // alert(`${enteredNumber} plus 100 is ${combined}`);
+    //
+    // if (enteredNumber > 0) {
+    //     alert(`${enteredNumber} is a positive number.`);
+    // }
+    // else {
+    //     alert(`${enteredNumber} is a negative number.`);
+}}
+
+// }
+
