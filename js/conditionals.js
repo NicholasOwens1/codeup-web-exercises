@@ -185,30 +185,40 @@
  * HINT: The way we prompt for a value could be improved
  */
 
-// let numQuestion = confirm(`Would you like to enter a number?`);
+
+const askPermission = answer => {
+    let permissionGranted = confirm('Would you like to enter a number?');
+    if (permissionGranted === true) {
+        let enterNumber = prompt("Please enter a number");
+        if (isNaN(enterNumber)
+
+    }
+
+}
+
+// const numQuestion = confirm(`Would you like to enter a number?`);
 // if (numQuestion === true) {
-//     let enteredNumber = parseInt(prompt("enter a number"));
-
-    // if (isNan(enteredNumber === true)) {
-    //     alert("that is not a number");
-    // }
-    //
-    //
-    // if (enteredNumber % 2 === 0) {
-    //     alert(`${enteredNumber} is an even number`);
-    // }
-    // else {
-    //     alert(`${enteredNumber} is an odd number`)
-    // }
-    // let combined = parseInt(100) + enteredNumber;
-    // alert(`${enteredNumber} plus 100 is ${combined}`);
-    //
-    // if (enteredNumber > 0) {
-    //     alert(`${enteredNumber} is a positive number.`);
-    // }
-    // else {
-    //     alert(`${enteredNumber} is a negative number.`);
-}}
-
+//     const enteredNumber = parseFloat(prompt("enter a number"));
+//
+//     if (isNaN(enteredNumber) === true) {
+//         alert("that is not a number");
+//     }
+//     }
+//     if (enteredNumber % 2 === 0) {
+//         alert(`${enteredNumber} is an even number`);
+//     }
+//     else {
+//         alert(`${enteredNumber} is an odd number`)
+//     }
+//     let combined = parseFloat(100) + enteredNumber;
+//     alert(`${enteredNumber} plus 100 is ${combined}`);
+//
+//     if (enteredNumber > 0) {
+//         alert(`${enteredNumber} is a positive number.`);
+//     }
+//     else {
+//         alert(`${enteredNumber} is a negative number.`);
 // }
-
+//
+// }
+//
