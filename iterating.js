@@ -6,23 +6,23 @@
      * 'names'.
      */
 
-    // let names = ["james", "mike", "donatello", "raphael"]
+    let names = ["james", "mike", "donatello", "raphael"]
 
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
      */
-    // console.log(names.length)
+    console.log(names.length)
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
 
-    // names.split
-
-    // console.log(names)
+    names.split
+    //
+    console.log(names)
     //
     /**
      * TODO:
@@ -30,17 +30,17 @@
      * array.
      */
 
-    // for (let i = 0; i < names.length; i++) {
-    //     console.log(names[i])
-    // }
+    for (let i = 0; i < names.length; i++) {
+        console.log(names[i])
+    }
 
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-// names.forEach((name) => {
-//     console.log(`cool name, ${name}`)
-// })
+names.forEach((name) => {
+    console.log(`cool name, ${name}`)
+})
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
@@ -56,13 +56,23 @@
      */
 
     let first = [1, 2, 3, 4, 5]
-const funOne = (arrOne) => {
-        console.log(arrOne[0])
+    let second = [1,2,3,4,5]
+    let last = [1,2,3,4,5]
+    const funOne = (position) => {
+        console.log(first[0])
     }
 
-    let funTwo = []
+    const funTwo = (position) => {
+        console.log(second[1])
+    }
+
+    const funThree =(position) => {
+        console.log(last[4])
+    }
 
     funOne(first)
+    funTwo(second)
+    funThree(last);
 
 
 
