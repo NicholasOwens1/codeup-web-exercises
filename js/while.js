@@ -3,24 +3,19 @@ while (i <= 32768) {
     console.log(i *= 2)
 }
 
-let allCones = Math.floor(Math.random() * 50) + 50;
-
-let purchase = Math.floor(Math.random() * 5) + 1;
+let conesInventory = randomNumber(50, 100);
 
 do {
-    if (purchase > allCones) {
-        console.log(`Cannot sell you ${purchase}, I only have ${allCones}`)
-        console.log(`${conesWanted} sold`)
-        conesWanted = 0
+    let conesWanted = randomNumber(1, 5);
+    if (conesWanted > conesInventory) {
+        console.log(`Cannot sell you ${conesWanted}, I only have ${conesInventory}`);
+        console.log(`${conesInventory} sold...`);
+        conesInventory = 0;
+    } else {
+        console.log(`${conesWanted} sold...`);
+        conesInventory = conesInventory - conesWanted;
     }
-    else if (
-        console.log(`${conesWanted} sold`)
-            let allCones = allCones - purchase
+    console.log(`${conesInventory} left`);
 
-    while (allCones > 0)
-        }
-    else if (allCones < purchase) {
-        console.log(`${allCones} left`)
-        }
-    }
-}
+} while(conesInventory > 0);
+console.log("Yay! I've sold them all!");
