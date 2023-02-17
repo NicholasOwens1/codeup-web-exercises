@@ -7,6 +7,7 @@
      */
 
     let names = ["james", "mike", "donatello", "raphael"]
+    // array with names
 
     /**
      * TODO:
@@ -14,6 +15,7 @@
      * array.
      */
     console.log(names.length)
+    // number of elements in array
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
@@ -21,9 +23,9 @@
      */
 
     names.split
-    //
+    // split the names array into multiple parts
     console.log(names)
-    //
+    //give each name seperately
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
@@ -33,7 +35,7 @@
     for (let i = 0; i < names.length; i++) {
         console.log(names[i])
     }
-
+    //
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
