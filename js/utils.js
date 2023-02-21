@@ -1,5 +1,5 @@
 // Money format USD
-toLocaleString("en-US", {style:"currency", currency:"USD"})
+// toLocaleString("en-US", {style:"currency", currency:"USD"})
 
 // random number function
 function randomNumber(min, max) {
