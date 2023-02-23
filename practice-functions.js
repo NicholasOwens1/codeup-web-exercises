@@ -44,11 +44,38 @@ const isMultipleOfFive = input => {
 
 // - Make a function named `isThree(input)`
 
-const = isThree = input
+const isThree = input => {
+    if (input === 3) {
+        return true
+    }
+    else return false
+}
+
 // - Make a function named `isMultipleOfThree(input)`
+
+const isMultipleOfThree = number => {
+    if (number % 3 === 0) {
+        return true
+    }
+    else return false
+}
+
+
 // - Make a function named `isMultipleOfThreeAndFive(input)`
+
+const isMultipleOfThreeAndFive = number => {
+    if (number % 3 === 0 && number % 5 === 0) {
+        return true
+    }
+    else return false
+}
+
+
 // - Make a function named `isMultipleOf(target, n)` which checks if target is
 // evenly divisible by `n`
+
+co
+
 // - Make a function named `isTrue(boolean)`
 // - Make a function named `isFalse(boolean)`
 // - Make a function named `isTruthy(input)`, remember that values other than true
