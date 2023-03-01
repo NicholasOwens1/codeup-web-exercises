@@ -1,3 +1,74 @@
-.fancy-header {
-    color: purple;
+body {
+    background-image: url("images/pexels-andrew-neel-2312369(1).jpg");
+    background-size: cover;
+    background-color: #d69ce8;
+    margin:0px;
+    padding:20px;
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+@font-face {
+    font-family: Golos Text;
+    src: url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Ultra&display=swap');
+}
+
+div {
+    font-family : Golos Text
+    }
+
+
+.example {
+    background-color: red;
+    width:400px;
+    height:400px;
+    padding:30px;
+}
+
+h1, h2 {
+    color: #d7dafa;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.header1{
+    font-size: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header p {
+    color: #838383;
+}
+
+header {
+    background-color: aqua;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.features-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.photo-wrapper:hover img {
+    transform: scale(1.1);
+}
+.photos-wrapper img {
+    display:block;
+    flex-grow:1;
+    max-width:100%;
 }

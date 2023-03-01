@@ -1,0 +1,38 @@
+
+header.container {
+    height: 80px;
+    color:lightgray;
+}
+
+/*turns "home" black*/
+div.column.shrink:nth-child(1) {
+    color: black;
+}
+
+
+
+.container.hero-scene {
+    height: 75vh;
+    background-color: #e5e5e5;
+}
+
+
+
+.hero-text {
+    max-width: 500px;
+}
+
+.container.features {
+    padding: 40px 0;
+}
+
+.feature-card {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 40px;
+    transition: all ease.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05)
+}

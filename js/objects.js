@@ -164,7 +164,3 @@ books.forEach((book, index) => {
  *   `showBookInfo` function.
  */
 
-
-const createBook = (title, author) => {
-    return book:
-}
