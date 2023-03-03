@@ -69,6 +69,10 @@
 .row.no-gap {
     gap: unset;
 }
+
+.row.grow {
+    flex: 1 0 0;
+}
 /*
     The "column" is a container element that vertically separates its
     children, which are usually content elements. When paired with sibling columns,
@@ -82,8 +86,14 @@
 }
 /* Combo classes to extend the column's versatility */
 .column.shrink {
-    flex: 0 1 80px;
+    flex: 0 1 auto;
 }
+
+.left-column-right-border {
+    width: 20px;
+    color: deepskyblue;
+}
+
 .column.text-center {
     text-align: center;
 }
@@ -99,3 +109,4 @@
 .column.justify-space-between {
     justify-content: space-between;
 }
+
