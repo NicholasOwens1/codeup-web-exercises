@@ -8,10 +8,21 @@
 // Fundamentals
 
 // Solution:
-function chromosomeCheck(sperm) {
-    if (sperm === "XX") {
-        return "Congratulations! You're going to have a daughter."
-    } else if (sperm === "XY") {
-        return "Congratulations! You're going to have a son."
+// function chromosomeCheck(sperm) {
+//     if (sperm === "XX") {
+//         return "Congratulations! You're going to have a daughter."
+//     } else if (sperm === "XY") {
+//         return "Congratulations! You're going to have a son."
+//     }
+
+let cubeChecker = function(volume, side){
+    let cubed = Math.pow(side,3);
+    if (side <= 0 || cubed === 0 ) {
+        return false;
     }
+    if (cubed === volume) {
+        return true
+    }
+    else return false
 }
+console.log(cubeChecker(0,0))
