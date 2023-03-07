@@ -58,23 +58,23 @@
  * All test arrays will have at least one element and are valid.
  */
 
-const minMax = x => {
-    let arrayHolder = [];
-    // create array holder
-    let smallest = Math.min(...x);
+// const minMax = x => {
+//     let arrayHolder = [];
+//     create array holder
+    // let smallest = Math.min(...x);
     // give variable to smallest array number
-    arrayHolder.push(smallest);
+    // arrayHolder.push(smallest);
     // put smallest array number into array holder
-    let big = Math.max(...x);
+    // let big = Math.max(...x);
     // give variable to biggest array number
-    arrayHolder.push(big);
+    // arrayHolder.push(big);
     // push biggest array number to end of array
-    return arrayHolder
-    //return array with biggest and smallest number in that order
-}
-
-console.log(minMax([1]));
-
+    // return arrayHolder
+    // return array with biggest and smallest number in that order
+// }
+//
+// console.log(minMax([1]));
+//
 /**
  * Drink Sorting
  * You will be given an array of drinks, with each drink being an object with two properties: name and price.
@@ -90,11 +90,11 @@ console.log(minMax([1]));
  * Examples
  * >> sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", price: 50}]
  */
-const sortDrinksByPrice = drinks => {
-    return drinks.sort((a,b) => a.price - b.price);
-}
-
-console.log(sortDrinksByPrice([{name: "lime", price: 10}, {name: "lemonade", price: 50}]));
+// const sortDrinksByPrice = drinks => {
+//     return drinks.sort((a,b) => a.price - b.price);
+// }
+//
+// console.log(sortDrinksByPrice([{name: "lime", price: 10}, {name: "lemonade", price: 50}]));
 
 
 /**
@@ -114,3 +114,17 @@ console.log(sortDrinksByPrice([{name: "lime", price: 10}, {name: "lemonade", pri
  *        { name: "Martin",  age: 16, budget: 1600 }
  *    ]) ➞ 62600
  */
+
+const peopleAndBudgets = [
+    { name: "John", age: 21, budget: 23000 },
+    { name: "Steve",  age: 32, budget: 40000 },
+    { name: "Martin",  age: 16, budget: 2700 }
+]
+
+function getBudgets(arrayOfObjects) {
+    let totalBudget = 0;
+    arrayOfObjects.forEach(object => totalBudget += object.budget);
+    return totalBudget;
+}
+
+console.log(getBudgets(peopleAndBudgets))

@@ -15,14 +15,54 @@
 //         return "Congratulations! You're going to have a son."
 //     }
 
-let cubeChecker = function(volume, side){
-    let cubed = Math.pow(side,3);
-    if (side <= 0 || cubed === 0 ) {
-        return false;
+// let cubeChecker = function(volume, side){
+//     let cubed = Math.pow(side,3);
+//     if (side <= 0 || cubed === 0 ) {
+//         return false;
+//     }
+//     if (cubed === volume) {
+//         return true
+//     }
+//     else return false
+// }
+// console.log(cubeChecker(0,0))
+
+// function getMiddle(s) {
+//     let array = [];
+// //   creates an empty array to hold letters
+//     let split = s.split;
+// //   turns "s" string into an array
+//     let length = split.length;
+// //   gives a variable to the length of the string split into an array
+//     let middle = Math.round(length / 2);
+// //   gives a variable to the middle index of the string split into an array
+//     if (length % 2 !== 0) {
+//         return middle.join
+//     }
+//     if (length % 2 === 0) {
+//         for (let i = 0 ; i < 2; i++) {
+//             array.push(middle);
+//         }
+//         return array;
+//     }
+// }
+//
+// console.log(getMiddle("ljhh"))
+
+
+// function evenOrOdd(number) {
+//     if (number % 2 === 0) {
+//         return "Even"
+//     }
+//     else if (number % 2 !== 0) {
+//         return "Odd"
+//     }
+// }``
+
+function repeatStr (n, s) {
+    let result = "";
+    while (i = 0, i <= n, i++) {
+       let x = result.concat(s);
+       return x
     }
-    if (cubed === volume) {
-        return true
-    }
-    else return false
 }
-console.log(cubeChecker(0,0))
