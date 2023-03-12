@@ -47,8 +47,6 @@
 //     }
 // }
 //
-// console.log(getMiddle("ljhh"))
-
 
 // function evenOrOdd(number) {
 //     if (number % 2 === 0) {
