@@ -13,7 +13,8 @@
 (function() {
     "use strict";
 
-    var detonationTimer = 5;
+    let interval= 1000
+    let detonationTimer = 5;
 
     // TODO: This function needs to be called once every second
     function updateTimer() {
@@ -26,11 +27,14 @@
 
         detonationTimer--;
     }
+    let updateIntervalId = setInterval(updateTimer, 1000)
+    console.log(updateIntervalId)
+
 
     // TODO: When this function runs, it needs to
     // cancel the interval/timeout for updateTimer()
     function defuseTheBOM() {
-
+        clearTimeout(updateIntervalId)
     }
 
     // Don't modify anything below this line!
