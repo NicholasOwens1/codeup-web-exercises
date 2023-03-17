@@ -23,3 +23,10 @@ function arrayOfRandomNumbers(lengthOfArray){
     }
     return array;
 }
+
+// takes care of escaping these characters and places a "#" at the beginning of the ID string:
+function jq( myid ) {
+
+    return "#" + myid.replace( /(:|\.|\[|\]|,|=|@)/g, "\\$1" );
+
+}

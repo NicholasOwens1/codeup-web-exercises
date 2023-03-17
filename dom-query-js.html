@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
 </head>
 <body>
 
-<h1 id="main-header">JavaScript is Cool</h1>
+<h1 id="main-header">Js exercise</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -25,7 +25,33 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<div class="container">
+    <div class="row full width">
+        <button id="btn1">Change Header</button>
+        <button id="btn2">Change Subheader</button>
+        <button id="btn3">Change List</button>
+        <button id="btn4">Change first color</button>
+        <button id="btn5">Change sub paragraph</button>
+    </div>
+    <div class="row full-width justify-center">
+        <button id="btnALl">onOffSwitch</button>
+    </div>
+</div>
+
+
+
 <script>
+<!--give variables to the buttons-->
+function() {
+    let btn1 = document.querySelector(`#btn1`);
+    let btn2 = document.querySelector(`#btn2`);
+    let btn3 = document.querySelector(`#btn3`);
+    let btn4 = document.querySelector(`#btn4`);
+    let btn5 = document.querySelector(`#btn5`);
+
+    let mainHeader = document.querySelector(`#main-header`);
+
+
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
@@ -35,6 +61,21 @@
 
         mainHeader.innerHTML = `JavaScript is Cool`;
 
+        // give variable to innerText on mainHeader
+
+        let mainHeaderText = mainHeader.innerText;
+
+        // function that logs "running changeHeader". If the innerText on main-header is itself, replace it with "JavaScript is Cool,
+
+        const changeHeader = () => {
+        console.log(`Running changeHeader`);
+        if (mainHeader.innerText === mainHeaderText) {
+        mainHeader.innerHTML = `JavaScript is Cool`;
+        } else {
+            mainHeader
+        }
+        }
+    }
         // TODO: Uncomment the next line and get the sub header element by id
         let subHeader = document.querySelector(`#sub-header`) ;
 
