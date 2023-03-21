@@ -1,5 +1,6 @@
 'use strict';
 
-$(`button`).on(`click`, function() {
+$(`#button`).click(function() {
+    // alert("clicked")
     $(`dd`).toggleClass(`invisible`);
 });
