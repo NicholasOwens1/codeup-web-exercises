@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weathermap</title>
+    <script src="js/mapbox-geocoder-utils.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+    <script type="module" src="js/weather_map.js"></script>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/weather_map.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <!-- Header row, "Weather Map" "Current City"-->
+    <div class="container">
+        <div class="row no-padding full-width" id="top-row">
+            <div class="column justify-space-between align-bottom" id="firstColumn">Weather App</div>
+            <div class="column justify-space-between" id="secondColumn">Current City: (this city)</div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Search Bar-->
+        <div class="row full-width" id="secondRow">
+            <div class="column no-padding full-width" id="searchBar">
+                <p class="place">Place</p>
+                <form>
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search">
+                    <button class="find">Find</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Weather Boxes-->
+    <div class="container five-day-forecast" id="boxes">
+        <div class="row full-width" id="weather">
+        <div class="column">
+            <div class="weather" id="day1">
+                <div class="date text-center"></div>
+                <div class="temp text-center">text</div>
+                <div class="clouds text-center">text</div>
+                <div class="wind text-center">text</div>
+                <div class="pressure text-center">text</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="weather" id="day2">
+                <div class="date text-center">text</div>
+                <div class="temp text-center">text</div>
+                <div class="clouds text-center">text</div>
+                <div class="wind text-center">text</div>
+                <div class="pressure text-center">text</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="weather" id="day3">
+                <div class="date text-center">text</div>
+                <div class="temp text-center">text</div>
+                <div class="clouds text-center">text</div>
+                <div class="wind text-center">text</div>
+                <div class="pressure text-center">text</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="weather" id="day4">
+                <div class="date text-center">text</div>
+                <div class="temp text-center">text</div>
+                <div class="clouds text-center">text</div>
+                <div class="wind text-center">text</div>
+                <div class="pressure text-center">text</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="weather" id="day5">
+                <div class="date text-center">text</div>
+                <div class="temp text-center">text</div>
+                <div class="clouds text-center">text</div>
+                <div class="wind text-center">text</div>
+                <div class="pressure text-center">text</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container grow map-holder map-container" id="map"></div>
+</div>
+<script type="module">
+    import keys from './js/keys.js';
+
+    mapboxgl.accessToken = keys.mapbox;
+                   const map = new mapboxgl.Map({
+                     container: 'map', // container ID
+                     style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
+                     center: [-98.4916, 29.4252], // starting position [lng, lat]
+                     zoom: 20, // starting zoom
+                   });
+                     map.setZoom(3);
+</script>
+
+
+
+</body>
+</html>

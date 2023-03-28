@@ -1,4 +1,4 @@
-
+"use strict";
 
 /**
  * TODO:
@@ -9,13 +9,13 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-// const sayHi = (name) => {
+// const sayHi = name => {
 //     let message = `Hello, ${name}!`
 //     return message;
 // }
-// function sayHello(name){
-//     return(`Hello, ${name}!`)
-// }
+function sayHello(name){
+    return(`Hello, ${name}!`)
+}
 // //
 // // /**
 // //  * TODO:
@@ -25,9 +25,9 @@
 //  // * console.log 'helloMessage' to check your work
 //  // */
 // //
-// sayHello("Nick");
-// let helloMessage = sayHello("Nick");
-// console.log(helloMessage);
+sayHello("Nick");
+let helloMessage = sayHello("Nick");
+console.log(helloMessage);
 
 //
 // /**
@@ -138,6 +138,5 @@
 // const applyDiscount = (price, discount) => {
 //     let appliedDiscount = parseFloat(price) * parseFloat(discount);
 //     return appliedDiscount;
-let test = prompt("type something")
-
+// }
 

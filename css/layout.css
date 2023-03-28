@@ -110,3 +110,42 @@
     justify-content: space-between;
 }
 
+.d-flex {
+    display: flex;
+}
+.d-flex.flex-column {
+    flex-direction: column;
+}
+.d-flex.grow {
+    flex: 1 0 0;
+}
+.d-flex.justify-center {
+    justify-content: center;
+}
+.d-flex.justify-space-between {
+    justify-content: space-between;
+}
+.d-flex.justify-end {
+    justify-content: end;
+}
+.d-flex.align-center {
+    align-items: center;
+}
+.d-flex.align-end {
+    align-items: center;
+}
+.wrap {
+    flex-wrap:wrap;
+}
+.text-center {
+    text-align: center;
+}
+.gap-10 {
+    gap: 10px;
+}
+.gap-15 {
+    gap: 15px;
+}
+.gap-20 {
+    gap: 20px;
+}

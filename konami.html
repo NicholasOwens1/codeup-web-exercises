@@ -7,33 +7,6 @@
 <h1>Konami Code</h1>
 
 <script src="js/jquery.js"></script>
-<!--<script src="../js/konami.js"></script>-->
-<script>
-  "use strict";
-  // give variable to array to hold konami code
-  let codeHolder = [];
-  // give variable to the correct code
-  let code = [38,38,40,40,37,39,37,39,66,65,13];
-  // if (codeHolder.length === code.length && codeHolder.join === code.join) {
-  //   alert("code entered")
-  // }
-  // when a key is let go, push that key into the codeHolder array
-  $(document).keyup(function(event){
-    codeHolder.push(event.keyCode);
-    // log the key that was pressed
-    console.log(event.keyCode);
-    // log the updated array
-    console.log(codeHolder);
-    // if the CodeHolder array is equal to the correct code, alert ('code entered)
-    if (codeHolder === code && codeHolder.length === code.length && codeHolder.join === code.join) {
-      alert("You have added 30 lives!")
-      // } else {
-    //   if (codeHolder.length > 11 && codeHolder.join !== code.join) {
-    //     codeHolder.length = 0
-    //   }
-    }
-  });
-
-</script>
+<script src="js/konami.js"></script>
 </body>
 </html>
