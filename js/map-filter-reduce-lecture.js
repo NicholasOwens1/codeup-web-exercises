@@ -42,3 +42,37 @@ const cars = [
     }
 ];
 
+const mileages = cars.map(car => car.mileage)
+
+const carNames = cars.map(car => `${car.make} ${car.model}`);
+
+const books = [
+    {title: 'Win Chess',
+        author: {
+            firstName: "James",
+            lastName: "Stewart"}
+    },
+    {title: 'Run Slow',
+        author: {
+            firstName: "Mike",
+            lastName: "Hoffman"
+        }},
+    {title: 'Cat Language',
+        author: {
+            firstName: "Navia",
+            lastName: "Alexander"
+        }},
+    {title: 'Saxophonology',
+        author: {
+            firstName: "Javers",
+            lastName: "Owens"
+        }},
+    {title: 'Bake Everything',
+        author: {
+            firstName: "Syndey",
+            lastName: "Johnson"
+        }},]
+
+const authors = books.map(book => `${book.author.firstName} ${book.author.lastName}`);
+
+const under10k = cars.filter(car => cars.mileage < 10000 )
