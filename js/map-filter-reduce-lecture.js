@@ -1,78 +1,44 @@
-// const prices = [32.99, 21.99, 6.99, 4.99 , 12.99, 8.98, 5.99]
-
-// prices.forEach(price => {
-//     console.log (price + 1)
-// })
-
-// const pricesAfterTax = prices.map(price => {
-//     const tax = (price * 0.0825).toFixed(2);
-//     const total = (price + parseFloat(tax)).toFixed(2);
-//     return total;
-// })
-
-// let randomNumbers = [70, 30, 73, 22, 40, 48, 76, 20, 13, 92, 20, 56, 97, 76, 26, 77, 57, 47, 83, 70 ];
-//
-// const squared = randomNumbers.map(number => number ** 2);
-
-const cars = [
+const users = [
     {
-        make: "Honda",
-        model: "Civic",
-        mileage: 10428
+        id: 1,
+        name: 'ryan',
+        email: 'ryan@codeup.com',
+        languages: ['clojure', 'javascript'],
+        yearsOfExperience: 5
     },
     {
-        make: "Toyota",
-        model: "Corolla",
-        mileage: 9425
+        id: 2,
+        name: 'luis',
+        email: 'luis@codeup.com',
+        languages: ['java', 'scala', 'php'],
+        yearsOfExperience: 6
     },
     {
-        make: "Ford",
-        model: "Mustang",
-        mileage: 2567
+        id: 3,
+        name: 'zach',
+        email: 'zach@codeup.com',
+        languages: ['javascript', 'bash'],
+        yearsOfExperience: 7
     },
     {
-        make: "Audi",
-        model: "A3",
-        mileage: 14500
+        id: 4,
+        name: 'fernando',
+        email: 'fernando@codeup.com',
+        languages: ['java', 'php', 'sql'],
+        yearsOfExperience: 8
     },
     {
-        make: "Mazda",
-        model: "3",
-        mileage: 11248
+        id: 5,
+        name: 'justin',
+        email: 'justin@codeup.com',
+        languages: ['html', 'css', 'javascript', 'php'],
+        yearsOfExperience: 9
     }
 ];
 
-const mileages = cars.map(car => car.mileage)
+const hasThree = users.languages.filter(function(n){
+    return n.length === 0;
+})
+console.log(hasThree)
 
-const carNames = cars.map(car => `${car.make} ${car.model}`);
-
-const books = [
-    {title: 'Win Chess',
-        author: {
-            firstName: "James",
-            lastName: "Stewart"}
-    },
-    {title: 'Run Slow',
-        author: {
-            firstName: "Mike",
-            lastName: "Hoffman"
-        }},
-    {title: 'Cat Language',
-        author: {
-            firstName: "Navia",
-            lastName: "Alexander"
-        }},
-    {title: 'Saxophonology',
-        author: {
-            firstName: "Javers",
-            lastName: "Owens"
-        }},
-    {title: 'Bake Everything',
-        author: {
-            firstName: "Syndey",
-            lastName: "Johnson"
-        }},]
-
-const authors = books.map(book => `${book.author.firstName} ${book.author.lastName}`);
-
-const under10k = cars.filter(car => cars.mileage < 10000 )
+const emails = users.map(user => user.email)
